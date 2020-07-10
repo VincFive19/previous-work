@@ -1,0 +1,6 @@
+framework module Pods_Tomaa_assignment_1_milestone_1 {
+  umbrella header "Pods-Tomaa assignment 1 milestone 1-umbrella.h"
+
+  export *
+  module * { export * }
+}

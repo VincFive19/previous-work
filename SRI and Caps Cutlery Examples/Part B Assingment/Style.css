@@ -1,0 +1,264 @@
+/* SRI  Schizophrenia Research Initiative - Tomas Heligr-Pyke */
+
+
+table {
+  border-collapse: collapse;
+width: 100%;
+}
+
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+tr:nth-child(even) {
+background-color: #dddddd;
+}
+
+
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  font-style: normal;
+  color: DodgerBlue;
+  font-size: 70%;
+  font-family: sans-serif;
+  font: arial;
+  height: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+nav li {
+    float: left;
+    height: 100%;
+
+}
+
+nav li a {
+    display: block;
+    color: DodgerBlue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: DodgerBlue;
+    color: white;
+}
+
+/* FlexBox info */
+/*
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+/*/
+.header {
+  display: flex;
+  background-color: lightblue;
+  padding: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.header > div {
+  background-color: ;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.header-data {
+
+
+}
+
+.header-data-nav {
+
+}
+
+
+
+.footer {
+  display: flex;
+  background-color: lightblue;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.footer1 {
+  display: flex;
+  background-color: lightblue;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+
+}
+
+.footer-image {
+  margin: 20px;
+
+}
+
+.footer-two {
+  display: flex;
+  background-color: darkgray;
+  padding: 30px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  height: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-two > div {
+
+
+}
+
+.body {
+  display: flex;
+}
+
+.body-data {
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  list-style-type: circle;
+}
+
+.body-data-selfhelp {
+  justify-content: center;
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 2%;
+  /* FIX THIS */
+  background-color: lightblue;
+  -o-transition:color .2s ease-out, background 2s ease-in;
+  -ms-transition:color .2s ease-out, background 2s ease-in;
+  -moz-transition:color .2s ease-out, background 2s ease-in;
+  -webkit-transition:color .2s ease-out, background 2s ease-in;
+  transition:color .2s ease-out, background 2s ease-in;
+}
+
+.body-data-selfhelp:hover {
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: DodgerBlue;
+
+}
+
+
+.button {
+  text-align: center;
+}
+
+.button ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.button li {
+    float: left;
+    width: 100%;
+}
+
+.button li a {
+    display: block;
+    color: DodgerBlue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.button li a:hover {
+    background-color: DodgerBlue;
+    color: white;
+}
+
+
+/* Header */
+
+
+/* Body */
+.banner {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.banner img {
+  width: 100%;
+
+}
+
+.ezible {
+  margin: 4%;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.ezible img {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.measure {
+  width: 25%;
+  margin: 4%;
+  text-align: right;
+
+}
+
+
+/* footer1 */
+
+.footer-info {
+
+}
+
+/* footer 2 */

@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">  
+      <ion-back-button (click)="cancel()"></ion-back-button>
+    </ion-buttons>
+    <ion-title>New Journal Entry</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+      <form (ngSubmit)="logForm()">
+        <ion-item>
+            <ion-label>
+              <h1>Date</h1>
+              </ion-label>
+              <ion-datetime [(ngModel)]="journal.date" name="date" displayFormat="MMM DD, YYYY" min="2018" format="YYYY" datetime="yyyy-MM-dd HH:mm:ss" placeholder="select date"></ion-datetime>  
+              
+        </ion-item>        
+        <ion-item>
+          
+            <ion-label>
+              <h1>Time</h1>
+              </ion-label>
+              <ion-datetime [(ngModel)]="journal.time" name="time" display-format="hh:mm A" placeholder="select time"></ion-datetime>  
+        </ion-item>
+        <ion-item text-wrap height="100px">
+          
+          <ion-label position="stacked"  >
+            <h1>Context</h1>
+            </ion-label>
+            <ion-textarea [(ngModel)]="journal.context" name="context" type="text" placeholder="The context of what was happening around you, what were you doing? What were you listening to or watching? Any specific situations or objects? What people were you around?"></ion-textarea>  
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">
+            <h1>Triggers/What Happened?</h1>
+          </ion-label>
+          <ion-textarea [(ngModel)]="journal.triggers" name="triggers" type="text" placeholder="Thoughts that caused the low mood, what events happened, how you felt after"></ion-textarea>  
+        
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">
+            <h1>Coping Strategies</h1>
+          </ion-label>
+          <ion-textarea [(ngModel)]="journal.cope" name="cope" type="text" placeholder="What you did to cope"></ion-textarea>  
+        
+        </ion-item>
+        <ion-item text-wrap>
+          <ion-label>
+            <h1>Intensity </h1>
+            <p>0 being not so bad <br>10 being the worst</p>
+          </ion-label>
+          <ion-select [(ngModel)]="journal.intensity" name="intensity" placeholder="Select One" interface="alert">
+              <ion-select-option value="0">0</ion-select-option>
+              <ion-select-option value="1">1</ion-select-option>
+              <ion-select-option value="2">2</ion-select-option>
+              <ion-select-option value="3">3</ion-select-option>
+              <ion-select-option value="4">4</ion-select-option>
+              <ion-select-option value="5">5</ion-select-option>
+              <ion-select-option value="6">6</ion-select-option>
+              <ion-select-option value="7">7</ion-select-option>
+              <ion-select-option value="8">8</ion-select-option>
+              <ion-select-option value="9">9</ion-select-option>
+              <ion-select-option value="10">10</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+          <ion-button expand="full" fill="outline" text-wrap type="submit" (click)="formSubmission()">Save and Send to Mental Health Practitioner</ion-button>
+        </form>
+      </ion-list>
+</ion-content>

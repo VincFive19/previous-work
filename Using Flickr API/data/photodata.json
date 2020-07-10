@@ -1,0 +1,24 @@
+{
+    "photos": [
+        {
+            "thumb": "img/1.JPG",
+            "caption": "City"
+        },
+        {
+            "thumb": "img/2.JPG",
+            "caption": "Ferris Wheel"
+        },
+        {
+            "thumb": "img/3.jpg",
+            "caption": "Forbidden City"
+        },
+        {
+            "thumb": "img/4.jpg",
+            "caption": "Another City"
+        },
+        {
+            "thumb": "img/5.jpg",
+            "caption": "Beach"
+        }
+        ]
+}

@@ -1,0 +1,73 @@
+{
+	"type": "PetList",
+	"features": [
+
+		{
+			"type": "Pet",
+			"petScale": 0.6,
+			"circleSpeed": 1,
+			"animationChosen": 0
+		},
+		{
+			"type": "Pet",
+			"petScale": 0.5,
+			"circleSpeed": 1,
+			"animationChosen": 0
+		},
+		{
+			"type": "Pet",
+			"petScale": 0.8,
+			"circleSpeed": 0,
+			"animationChosen": 1
+		},
+		{
+			"type": "Pet",
+			"petScale": 0.3,
+			"circleSpeed": 4,
+			"animationChosen": 2
+		},
+		{
+			"type": "Pet",
+			"petScale": 0.4,
+			"circleSpeed": 3,
+			"animationChosen": 0
+		},
+		{
+			"type": "Pet",
+			"petScale": 0.7,
+			"circleSpeed": 2,
+			"animationChosen": 1
+		},
+		{
+			"type": "Pet",
+			"petScale": 0.8,
+			"circleSpeed": 1,
+			"animationChosen": 2
+		},
+		{
+			"type": "Pet",
+			"petScale": 0.4,
+			"circleSpeed": 4,
+			"animationChosen": 1
+		},
+		{
+			"type": "Pet",
+			"petScale": 0.5,
+			"circleSpeed": 3,
+			"animationChosen": 0
+		},
+		{
+			"type": "Pet",
+			"petScale": 0.7,
+			"circleSpeed": 2,
+			"animationChosen": 2
+		},
+		{
+			"type": "Pet",
+			"petScale": 0.7,
+			"circleSpeed": 1,
+			"animationChosen": 2
+		}
+
+	]
+}

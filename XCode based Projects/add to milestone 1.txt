@@ -1,0 +1,56 @@
+
+
+boardGame.swift
+
+class BoardGame {
+	var name: String
+	var subtitle: String
+	var description: String
+	var image: image
+
+
+	init(_ name: String, _ subtitle: String, _ description: String, _ image: Image) {
+		self.name = name
+		self.subtitle = subtitle
+		self.description = description
+		self.image = image
+	}
+}
+
+
+// add to main doc
+
+var jenga = BoardGame("Jenga", "Jenga for Jengaring", "Jenga is a fun tower stacking board game", jengaimagelocation)
+
+
+// to display just add jenga.name, jenga.subtitle etc into the view.
+
+
+// replace the current variables
+
+
+// UNittests
+
+unittest class
+	var boardGame: BoardGame?
+
+	set up
+		boardGame = BoardGame("Jenga", "Jenga for Jengaring", "Jenga is a fun tower stacking board game", jengaimagelocation)
+
+tests
+
+	// test 1
+	XCTAssertNotNil(boardGame)
+	
+	// test 2
+	XCTAssertEquals(boardGame.name, "Jenga")
+	
+// test 3
+	XCTAssertEquals(boardGame.subtitle, "Jenga for Jengaring")
+	
+// test 4
+	XCTAssertEquals(boardGame.description, "Jenga is a fun tower stacking board game")
+
+
+// test 5
+	XCTAssertNotNil(boardGame.image)

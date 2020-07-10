@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="top" horizontal="end" edge slot="fixed">
+    <ion-fab-button  (click)="openSettings()">
+        <!-- routerLink="/settings" "-->
+      <ion-icon name="settings"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-list>
+<ion-item>
+  <ion-label>    
+    <h1>Welcome {{name}}</h1>
+    <p>Hope you are having a wonderful day</p>
+  </ion-label>
+
+</ion-item>
+<ion-item>
+  <ion-label>    
+    <h2>{{quote}}</h2>
+    <p>{{quoteAuthor}}</p>
+  </ion-label>
+
+</ion-item>
+<ion-item>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Your Progress</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    
+    <img src="assets/img/graph.PNG" alt="">
+  </ion-card-content>
+
+</ion-card>
+
+</ion-item>
+</ion-list>
+
+
+</ion-content>

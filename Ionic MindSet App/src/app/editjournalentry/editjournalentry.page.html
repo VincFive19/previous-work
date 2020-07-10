@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Edit Journal Entry</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <form (ngSubmit)="logForm()">
+      <ion-item>
+        <ion-label>
+          <h1>Date</h1>
+        </ion-label>
+        <ion-datetime [(ngModel)]="date" name="date" displayFormat="MMM DD, YYYY" min="2018" format="YYYY" datetime="yyyy-MM-dd HH:mm:ss"
+          placeholder="select date"></ion-datetime>
+
+      </ion-item>
+      <ion-item>
+
+        <ion-label>
+          <h1>Time</h1>
+        </ion-label>
+        <ion-datetime [(ngModel)]="time" name="time" display-format="hh:mm A" placeholder="select time"></ion-datetime>
+      </ion-item>
+      <ion-item text-wrap height="100px">
+
+        <ion-label position="stacked">
+          <h1>Context</h1>
+        </ion-label>
+        <ion-textarea [(ngModel)]="context" name="context" type="text" placeholder="{{journals.context}}"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">
+          <h1>Triggers/What Happened?</h1>
+        </ion-label>
+        <ion-textarea [(ngModel)]="triggers" name="triggers" type="text" placeholder="{{journals.triggers}}"></ion-textarea>
+
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">
+          <h1>Coping Strategies</h1>
+        </ion-label>
+        <ion-textarea [(ngModel)]="cope" name="cope" type="text" placeholder="{{journals.cope}}"></ion-textarea>
+
+      </ion-item>
+      <ion-item text-wrap>
+        <ion-label>
+          <h1>Intensity </h1>
+        </ion-label>
+        <ion-select [(ngModel)]="intensity" name="intensity" placeholder="{{journals.intensity}}" interface="alert">
+          <ion-select-option value="0">0</ion-select-option>
+          <ion-select-option value="1">1</ion-select-option>
+          <ion-select-option value="2">2</ion-select-option>
+          <ion-select-option value="3">3</ion-select-option>
+          <ion-select-option value="4">4</ion-select-option>
+          <ion-select-option value="5">5</ion-select-option>
+          <ion-select-option value="6">6</ion-select-option>
+          <ion-select-option value="7">7</ion-select-option>
+          <ion-select-option value="8">8</ion-select-option>
+          <ion-select-option value="9">9</ion-select-option>
+          <ion-select-option value="10">10</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <input #fileInput type="file" accept="images/*" (change)="imageSelected(fileInput.files)" mulitple>
+        <img src="{{imageFile}}">
+      </ion-item>
+
+      <ion-button expand="full" fill="outline" text-wrap type="submit">Save and Send to Mental Health Practitioner</ion-button>
+    </form>
+  </ion-list>
+</ion-content>

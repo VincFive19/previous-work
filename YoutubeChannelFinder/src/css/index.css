@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+}
+
+#headerH1 {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header {
+    background-color: #FF0000;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    /*width: 100%;*/
+    font-family: 'Roboto';
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+    
+    
+}
+
+#search {
+    text-align: center;
+}
+
+.description {
+    margin: 10px;
+    font-family: 'Roboto';
+    /*text-align: center;*/
+    text-align: left;
+    padding: 10px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    text-align: left;
+    color: white;
+    width: 100%;
+}
+
+.search {
+    width: 60%;
+    
+  position: relative;
+  display: flex;
+}
+
+.searchWrap {
+  /*  width: 60%;*/
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*left: 50%;*/
+  justify-content: center;
+  display: flex;
+}
+
+#textSearchInput {
+    width: 100%;
+    border: 3px solid #FF0000;
+    border-right: none;
+    padding: 5px;
+    height: 24px;
+    font-size: 15px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    /*//color: #9DBFAF;*/
+    color: #7f6868;
+}
+
+#searchAmount {
+    width: 50px;
+  height: 40px;
+  border: 1px solid #FF0000;
+  background: #FF0000;
+  text-align: center;
+  color: #fff;
+  
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#searchButton {
+    width: 100px;
+  height: 40px;
+  border: 1px solid #FF0000;
+  background: #FF0000;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#searchButton:hover {
+    width: 100px;
+  height: 40px;
+  border: 1px solid #D71E18;
+  background: #D71E18;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.button {
+    /*display: inline-block;*/
+        width: 100px;
+  height: 40px;
+  border: 1px solid #FF0000;
+  margin-top: 20px;
+  background: #FF0000;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.button:hover {
+        width: 100px;
+  height: 40px;
+  border: 1px solid #D71E18;
+  background: #D71E18;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#buttonLinkToChannel {
+     /*display: inline-block;*/
+        width: 200px;
+  height: 40px;
+  border: 1px solid #FF0000;
+  margin-top: 20px;
+  background: #FF0000;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+#buttonLinkToChannel:hover {
+       width: 200px;
+  height: 40px;
+  border: 1px solid #D71E18;
+  background: #D71E18;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px 5px 5px 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+.channels {
+    border: 3px solid #FF0000;
+    background-color: 	WhiteSmoke;
+    text-align: right;
+    margin: 10px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 80%;
+    /*height: 250px;*/
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: slidein;
+     word-wrap: break-word;
+    border-radius: 5px 5px 5px 5px;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 50%;
+    width: 80%; 
+    opacity: 0%
+  }
+
+  to {
+    margin-top: 0%;
+    width: 80%;
+    opacity: 100%;
+  }
+}
+
+.image-size {
+    width: 200px;
+    height: 200px;
+}
+
+.flexbox-body {
+    display: flex;
+
+    
+}
+
+.flexbox-channel {
+    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+    justify-content: center; 
+    width: auto;
+    float: center;
+    width: 100%;
+    
+    
+}
+
+.overflow {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.navigation {
+    list-style-type: none;
+
+}
+
+.navigation:hover {
+    list-style-type: none;
+    color: pink;
+}
+
+
+.button {
+    float: right;
+}
+
+.header-text {
+    
+    
+}
+
+.paragraph-margin {
+    /*background-color: #FF0000;*/
+    color: black;
+    text-align: center;
+    padding-top: 0px;
+    /*width: 100%;*/
+    font-family: 'Roboto';
+    /*margin: 0;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    vertical-align: middle;
+}
+
+
+@media screen and (max-width: 768px) {
+  .flexbox-body {   
+    flex-direction: column;
+  }
+}

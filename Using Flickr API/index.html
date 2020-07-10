@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css"  >
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+      
+    </head>
+    <body>
+        <div class="header">
+            <h1>Photos From Around Australia</h1>
+            <p>Brisbane | Gold Coast | Noosa | Tambourine Mountain | Fingal Head</p>
+        </div>
+        
+        <div class="flexbox-body">
+            <!--recently viewed section-->
+            <div class="column other-columns-one">
+                <h4>Recently Viewed</h4>
+                <div id="recentlyViewedContainer"></div>
+            </div>
+            
+            <!--Navigation Section-->
+            <div class="column other-columns-two">
+                <!-- Navbar-->
+                <h4>Locations</h4>
+                <ul class="navigation" id="list">
+                    <li>Brisbane</li>
+                    <li>Gold Coast</li>
+                    <li>Noosa</li>
+                    <li>Tambourine Mountain</li>
+                    <li>Fingal Head</li>
+                    
+                </ul>
+                <button id="AustraliaButton">Random Images of Australia</button>
+            </div>
+            
+            <!--Image Section-->
+            <div class="flexbox-image" id="container">
+                <!--images-->
+            </div>
+           
+        </div>
+        
+        <div id="modal-container">
+            <!-- Close Button -->
+            <span id="modal-close">&times</span>
+            <!-- Content image -->
+            <img id="modal-content">
+            <!-- Caption text -->
+            <div id="modal-caption"></div>
+            
+        </div>
+        
+        
+        <script src="main.js"></script>
+    </body>
+</html>

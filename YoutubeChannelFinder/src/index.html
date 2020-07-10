@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- These scripts are here as Google reccomends them to be in the html, and not part of the javascript and webpack as they are constantly updated-->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+
+    <script src="app.js"></script>
+    <script src="modal.js"></script>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+
+    
+
+
+    
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="headerH1">The YouTube Channel Finder</h1>
+        <button id="authenticate" class="button" type="button" float="right">Login</button>
+        <button id="logoutButton" class="button" type="button" float="right">Logout</button>
+    </div>
+
+
+    <div class="description">
+        <h2>What is this application?</h2>
+        <p>This application allows you to search for YouTube channels that are of interest to you. You can type whatever you want to search for, for example "Search for cats" or "I want to find channels about RC Hobbies", or simply "Hobbies".</p>
+        <h2>How does this work?</h2>
+        <p>This application uses Wit.ai to gather variables and data from any searched phrase, this is then sent into the YouTube Data API to search for channels tagged with those key words. In order to search you must log in through Google. Google require permissions based on your Google account connected to YouTube, these include accessing the users YouTube account, however due to the features used in this application I have kept it so that it only reads the users YouTube account, and doesn't change any data as this application just needs the user to login to access YouTubes data.</p>
+        <br>
+        <h3 id="search">Search for a Channel (Enter "Search for cats" or "Cats and Dogs")</h3>
+        <div class="searchWrap">
+            <div class="search">
+                <input type="text" name="" id="textSearchInput" placeholder="Find your channel"/>
+
+                <select id="searchAmount">
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                </select>
+
+                <button type="button" id="searchButton">Search</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="flexbox-body">
+        
+        <div class="flexbox-channel" id="container">
+            <!--channels-->
+
+        </div>
+    </div>
+
+    
+
+</body>
+
+</html>
